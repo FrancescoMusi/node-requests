@@ -1,0 +1,7 @@
+il vostro compito:
+portarmi un'app che quando vado su localhost:3000/daniele con metodo GET mi scriva
+"ciao daniele come va"
+se vado su localhost:3000/saluta/:nome con metodo GET
+mi scriva "ciao :nome come va"
+se vado con metodo POST su localhost:3000/info mi manda un JSON con
+{ nome: vostronome, age: vostraetà }
