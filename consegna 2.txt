@@ -1,0 +1,5 @@
+prossimo compito:
+quando vai su /richiesta
+manda una richiesta GET a https://api.paninidellospalla.it/info, prende la response e la manda in res come json (res.json)
+
+(usare node fetch)

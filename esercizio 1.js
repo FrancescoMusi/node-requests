@@ -8,7 +8,7 @@ app.get("/daniele", (req, res) => {
 
 // saluta l'argomento
 app.get("/saluta/:nome", (req, res) => {
-  res.status(200).send("ciao ${req.params.nome} come va");
+  res.status(200).send(`ciao ${req.params.nome} come va`);
 });
 
 // da nome ed età
