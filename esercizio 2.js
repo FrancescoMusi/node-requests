@@ -1,7 +1,7 @@
 //importo i framework (libreria)
 const fetch = require("node-fetch");
 const express = require("express");
-const app = express;
+const app = express();
 
 //fetch serve a mandare richieste
 //1° argomendo = url a cui mandi la richiesta
