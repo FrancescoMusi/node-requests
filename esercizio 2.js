@@ -28,7 +28,7 @@ app.get("/richiesta", (req, res) => {
 	
 	.then(data => {
 		res.status(200).json(data);
-		}
+		})
 
 })
 
