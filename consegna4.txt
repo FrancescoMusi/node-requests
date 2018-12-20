@@ -1,0 +1,29 @@
+Consegna:
+Creare un app con i seguenti ENDPOINT
+
+/home [GET]
+manda in response "home" con status code 200
+
+/json [GET]
+create un json "user" che ha: name, age, email
+poi mandate in response "name ha age anni e la sua email è email", utilizzando gli ``
+
+/request [GET]
+mandate una request a questo URL:
+https://jsonplaceholder.typicode.com/todos/1
+poi mi mandate in response quello che avete ricevuto dalla richiesta l'attributo title
+es (data.title)
+
+/promise/:password [GET]
+prendete la password dall'URL
+create una promise (NON UNA FUNZIONE, UNA VARIABILE const CHE E UNA PROMISE)
+se la password è "admin" allora fate resolve("sei un admin")
+altrimenti reject("non sei admin")
+poi ovviamente richiamate la promise e con .then fate res.status(200).send(valoreDelResolve)
+con .catch res.status(401).send(valoreDelReject)
+dato che 401 = Unauthorized, non autorizzato (password errata)
+
+* [ALL]
+con rest status code 404, mandate in response non trovato
+
+listen su porta 8080
