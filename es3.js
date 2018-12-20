@@ -18,7 +18,8 @@ app.get("/promise/:numero", (req, res) => {
 		})
 	}
 
-  //data è il valore restutuito dalla funzione
+  //risulrato è il valore restutuito dalla funzione
+  //.then fa il resolve della promise    .catch fa il reject
 	controllaPariDispari(req.params.numero).then((risposta) => {
 		res.status(200).send(risposta);
 	}).catch((errore) => {
