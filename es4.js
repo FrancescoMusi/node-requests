@@ -27,23 +27,19 @@ app.get("/richiesta", (req, res) => {
 })
 
 app.get("/promise/:password", (req, res) => {
-	const ceckpass = (password) => {
-		return new Promise((resolve, reject) => {
-			if (password === "admin") {
-				resolve("Sei un admin")
-			}
-			else {
-				reject("Unauthorized")
-			}
-		})
-	}
+    const prom = new Promise((resolve, reject) => {
+        if (req.params.password === "admin") {
+            resolve("Sei un admin");
+        } 
+        else {
+            reject( "Unauthorized");
+        };
+    })
 
-	ceckpass(req.params.password).then((risposta) => {
-		res.status(200).send(risposta)
-		}).catch((errore) => {
-			res.status(401).send(errore)
-		})
-})
+    prom.then((resolved) => res.status(200).send(resolved))
+    .catch((error) => res.status(401).send(error));
+        
+});
 
 app.all("*", (req, res) => {
 	res.status(404).send("Not found")
