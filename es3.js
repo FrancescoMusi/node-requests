@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
-//serve a ...
+
 const port = process.env.port || 8080;
 
 app.get("/promise/:numero", (req, res) => {

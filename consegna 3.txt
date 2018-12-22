@@ -1,5 +1,0 @@
-con una PROMISE 
-aggiungete nella solita app di express un app.get/promise/:num
-in questo c ideve essere una promise che manda in res.send "pari"
-se il numero è pari, "dispari" se il numero è dispari. (resolve reject)
-se :num non è un numero manda in res.send un messaggio di errore 
