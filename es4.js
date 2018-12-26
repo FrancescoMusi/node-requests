@@ -3,17 +3,20 @@ const app = express();
 const fetch = require("node-fetch");
 const port = 8080;
 
-let dict = {"name":"Frafra", 
-"age":15,
-"email":"fra@gmail.com"
+let dict = {name:"Frafra", 
+age:15,
+mail:"fra@gmail.com"
  };
+
+let {name: name, age: age, enail: email} = dict;
 
 app.get("/home", (req, res) => {
 	res.status(200).send("Grove Street")
 })
 
+//	res.status(200).send(`Ti chiami ${dict.name}, hai ${dict.age} anni, la tua mail è: ${dict.email}`)
 app.get("/json", (req, res) => {
-	res.status(200).send(`Ti chiami ${dict["name"]}, hai ${dict["age"]} anni, la tua mail è: ${dict["email"]}`)
+	res.status(200).send(`Ti chiami ${name}, hai ${age} anni, la tua mail è: ${email}`)
 })
 
 app.get("/richiesta", (req, res) => {

@@ -1,9 +1,9 @@
 /*
- * BASI DI JAVASCRIPT
+BASI DI JAVASCRIPT
 */
 
 /*
- * if, else, else if
+if, else, else if
 */
 
 let a = 3; // le variabili si definiscono con let nomevariabile
@@ -19,7 +19,7 @@ if (a === 3) {
 console.log("ciao"); // equivale a print, manda in output nel terminale
 
 /*
- * while, for
+while, for
 */
 
 while (a !== 3) {
@@ -34,11 +34,11 @@ a = ["ciao", "come", "stai"];
 
 for (let i in a) {
   console.log(a[i]);
-  // in questo caso i è l'indice di a, che aumenta ogni volta
+  // in questo caso i è l'indice di a, che aumenta ogni volta E NON L'ELEMENTO
 }
 
 /*
- * definire una funzione
+definire una funzione
 */
 
 // primo metodo (OLD), fa schifo imparate il secondo
@@ -46,7 +46,7 @@ function functionName_1 (arguments) {
   console.log(arguments);
 }
 
-// in questo caso costante perchè la variabile functionName non cambierà
+// in questo caso cosnt perchè la variabile functionName non cambierà
 // viene chiamata arrow function, imparate queste.
 const functionName_2 = (arguments) => {
   console.log(arguments);
@@ -56,13 +56,13 @@ const functionName_2 = (arguments) => {
 functionName_2("bartolino");
 
 /*
- * importare un framework (libreria) o un file (da errore quindi lo ho commentato)
+importare un framework (libreria) o un file (da errore quindi lo ho commentato)
 */
 
-const qualcosa /*= require("nomelibreria")*/;
+const qualcosa = require("nomelibreria");
 
 /*
- * JSON
+JSON
 */
 
 let persona = {
